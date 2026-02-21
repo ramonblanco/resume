@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Ramon Blanco
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jose Ramon Blanco Martinez} \\ \vspace{1pt}
+    \textbf{Senior Java Developer | Microservices \& Cloud Specialist} \\ \vspace{1pt}
+    \small +52 481-125-0406 $|$ \href{mailto:x@x.com}{\underline{ramonblanco117@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jose-ramon-blanco-martinez/}{\underline{linkedin.com/in/jose-ramon-blanco-martinez}} $|$
+\end{center}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+Senior Software Engineer with over 8 years of experience specializing in Java (8-21), Spring Boot, and Microservices architecture. Proven track record of delivering high-scale solutions for global companies like The Home Depot, Nike, Walmart and Citi. Expert in cloud-native development (AWS/GCP), containerization (Kubernetes/Docker), and modernizing legacy systems into high-performance architectures.
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (8, 11, 17, 21), Groovy, Python, SQL} \\
+     \textbf{Frameworks}{: Spring Core, Spring Boot, Quarkus, Flask, Apache Camel, Hibernate} \\
+     \textbf{Cloud \& Devops}{: AWS (Lambda, EC2, ECS, S3, SQS, SNS), GCP (BigQuery, PubSub, Cloud Scheduler), Docker, Kubernetes, Jenkins, GitHub Actions} \\
+     \textbf{Architecture \& Tools}{: Microservices, RESTful APIs, Design Patterns, Kafka, PostgreSQL, DynamoDB, Redis, Git, IntelliJ, Eclipse, Postman} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Grid Dynamics (Client: The Home Depot \& Fiserv) | Senior Software Engineer}
+      {August 2023 -- Present}
+      {The Home Depot (Sourcing Core)}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architecting and maintaining critical inventory calculation engines that handle over 100K TPS during peak times using Java 21, SpringBoot, and Quarkus}
+        \resumeItem{Managed containerized services in GCP using Kubernetes, leveraging BigQuery for high-volume data processing}
+      \resumeItemListEnd
+      {Fiserv (Embedded Finance)}
+            \resumeItemListStart
+        \resumeItem{Developed serverless banking solutions using AWS Lambda (Java 21) for card issuance, loan processing, and fund transfers}
+        \resumeItem{Co-designed an entitlements application to secure and manage granular transaction permissions}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Globant (Client: Taulia \& Nike) | Senior Java Developer}
+      {Mar. 2021 -- Aug. 2023}
+      {Taulia}{Remote}
+      \resumeItemListStart
+        \resumeItem{Optimized supply chain integrations using Apache Camel, Groovy, and Java 11}
+    \resumeItemListEnd
+      {Nike (NCP)}
+      \resumeItemListStart
+        \resumeItem{Maintained and migrated the Nike Communications Platform, scaling message delivery services using AWS SQS, SNS, DynamoDB, and EKS/ECS}
+    \resumeItemListEnd
+      {Nike (Lexi V2)}
+      \resumeItemListStart
+        \resumeItem{Engineered a greenfield translation and product-serving platform from scratch using Java 11, Gradle, and Amazon RDS (PostgreSQL) to support global internal and public stakeholders}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Walmart GTS | Java Developer}
+      {Apr. 2019 -- Apr. 2021}
+      {Workforce Management}{Mexico City/Remote}
+      \resumeItemListStart
+        \resumeItem{Architected and led the migration of the 'School Calendar' compliance system from legacy ETL to a Java-based architecture, automating labor schedule management for tens of thousands of minor associates across 5,000+ Walmart locations in the US}
+        \resumeItem{Modernized "Schedule Export" from a batch-based process to a real-time streaming application using Kafka, Spring, and Azure SQL}
+        \resumeItem{Collaborated on improvements for the Associate Interface, the primary workforce management tool}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Anzen Digital (Client: Citi Banamex) | Java Developer}
+      {Oct. 2017 -- Apr. 2019}
+      {Business Bank/Banca Empresarial}{Mexico City}
+      \resumeItemListStart
+        \resumeItem{Migrated Enterprise Banking modules (Dynamic Authentication, Transfers, Payments) from Edify technology to a modern architecture, implementing Continuous Delivery practices}
+        \resumeItem{Transformed legacy personal banking monoliths into Microservices, developing core modules for user lifecycle management (CRUD)}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Instituto Tecnologico de Ciudad Valles}{Ciudad Valles, SLP}
+      {Master Degree in Engineering} {Jul. 2023 -- Jun 2025}    
+    \resumeSubheading
+      {Instituto Tecnologico de Ciudad Valles}{Ciudad Valles, SLP}
+      {Bachelor of Computer Systems Engineering} {Jul. 2011 -- Jul 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Professional Proficiency (B1+ Certified)} \\
+     \textbf{Spanish}{: Native} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
